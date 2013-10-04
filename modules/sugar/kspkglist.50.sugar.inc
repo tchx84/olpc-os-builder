@@ -11,6 +11,11 @@ sugar-cp-language
 sugar-cp-modemconfiguration
 sugar-cp-network
 sugar-cp-power
+gwebsockets
+sugar-cp-background
+sugar-cp-webaccount
+sugar-cp-webservices
+sugar-cp-updater
 
 # additional sugar packages
 libxml2-python
@@ -31,7 +36,7 @@ python-cjson
 libabiword
 
 # Browse
-gnash-plugin
+#gnash-plugin
 totem-mozplugin
 
 # Terminal
@@ -44,15 +49,13 @@ olpc-library
 
 # for Tuxmath activity
 SDL_Pango
+tuxmath
 
 # for Physics
 pybox2d
 
 # for text-to-speech in Read
 gstreamer-plugins-espeak
-
-# using a non-upstream updater temporarily (#10641)
-sugar-update-control
 
 # explicitly specify dependencies on GNOME's implementation of certain
 # components, otherwise the KDE ones will be brought in by default
@@ -61,3 +64,9 @@ notification-daemon
 
 # standard part of of PyGTK, used by some activities (#11053)
 pygtk2-libglade
+python-ipython-console
+tuxpaint
+
+# Useful fonts
+opendyslexic-fonts
+
