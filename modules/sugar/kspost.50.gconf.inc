@@ -12,3 +12,22 @@ gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults
 
 # Ask for the nick name when starting Sugar the first time
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/sugar/user/default_nick 'disabled'
+
+# Use microformat back end for updater
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/sugar/update/backend microformat.MicroformatUpdater
+
+# microformat updater url to use.
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type string --set /desktop/sugar/update/microformat_update_url http://wiki.laptop.org/go/Activities/OLPCAU/ARM-test-addons/13.2.0
+
+# Enable microformat updater.
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type int --set /desktop/sugar/update/auto_update_frequency 1
+
+# Set max activities open
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type int --set /desktop/sugar/maximum_number_of_open_activities 4
+
+# preset GSM
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/country au
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/providers Telstra
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type int --set /desktop/sugar/network/gsm/plan 2
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/apn telstra.internet
+
