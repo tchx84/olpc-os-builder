@@ -31,6 +31,9 @@ gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type int --set /desktop/sugar/network/gsm/plan 2
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/apn telstra.internet
 
+# enable control panel network hidden network section
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s --type boolean /desktop/sugar/extensions/network/conf_hidden_ssid true
+
 # Set Write default font
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s --type string /desktop/sugar/activities/write/font_face Sans
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s --type int /desktop/sugar/activities/write/font_size 20
