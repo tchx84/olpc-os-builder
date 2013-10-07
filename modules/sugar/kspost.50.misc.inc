@@ -6,3 +6,13 @@ chown olpc:olpc /home/olpc/{Activities,Library}
 # already included.
 rm -f /usr/share/applications/squeak.desktop
 update-desktop-database &> /dev/null || :
+
+# Add sugar fonts configuration file
+
+cat <<EOF >> /etc/sugar_fonts
+abc123
+Sans
+Serif
+Monospace
+OpenDyslexic
+EOF
