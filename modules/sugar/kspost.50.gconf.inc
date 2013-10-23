@@ -28,7 +28,7 @@ gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults
 
 # preset GSM
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/country au
-gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/providers Telstra
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/provider Telstra
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type int --set /desktop/sugar/network/gsm/plan 2
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /desktop/sugar/network/gsm/apn telstra.internet
 
