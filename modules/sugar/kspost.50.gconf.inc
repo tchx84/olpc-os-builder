@@ -38,3 +38,7 @@ gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults
 # Set Write default font
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s --type string /desktop/sugar/activities/write/font_face Sans
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s --type int /desktop/sugar/activities/write/font_size 20
+
+# Harvest statistics service configuration
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s /desktop/sugar/collaboration/harvest_api_key V9iIS8EBC7Aho2EDeeKCg7K9QB8Ue9K4 --type string
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults -s /desktop/sugar/collaboration/harvest_hostname https://harvest.one-education.org --type string
