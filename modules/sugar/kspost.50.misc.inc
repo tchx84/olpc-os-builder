@@ -19,8 +19,14 @@ EOF
 
 # Add sugar-client config file
 cat <<EOF >> /etc/sugar-client.conf
+[main]
+auto-register = 0
+auto-restore = 0
+backup-timeout = 0
+update-timeout = 86400
+
 [stats]
-enabled = False
+enabled = false
 EOF
 
 # Add sugar connections profile file
