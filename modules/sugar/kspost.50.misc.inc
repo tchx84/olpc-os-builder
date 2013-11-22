@@ -60,3 +60,12 @@ ipv4.method = auto
 
 802-11-wireless-security.key-mgmt = wpa-eap
 EOF
+
+# add the school fonts license
+
+mkdir -p /usr/share/sugar/licenses
+
+cat <<EOF >> /usr/share/sugar/licenses/school_font
+School Fonts © 2011 Free for use as part of the One Laptop per Child and Sugar projects.
+For any other use, visit: http://www.schoolfonts.com.au/
+EOF
