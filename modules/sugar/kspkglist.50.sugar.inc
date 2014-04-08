@@ -16,6 +16,7 @@ sugar-cp-background
 sugar-cp-webaccount
 sugar-cp-webservices
 sugar-cp-updater
+sugar-cp-backup
 
 # additional sugar packages
 libxml2-python
